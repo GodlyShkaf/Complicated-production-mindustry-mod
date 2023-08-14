@@ -1,0 +1,43 @@
+type: UnitFactory
+name: Unit production centre
+description: Multi unit factory, making both ground and air units from the resources
+health: 300
+size: 3
+consumes: {
+power: 2
+}
+plans: [
+{unit: blade
+requirements: [
+bronze/10
+copper-wire/10
+simple-scheme/5
+]
+time: 400
+}
+{unit: knuckles
+requirements: [
+metaglass/50
+scheme/2
+copper-wire/5
+spore-pod/10
+]
+time: 1000
+}
+{unit: cupboardUnit
+requirements: [
+cupboard/2
+copper-wire/4
+]
+time: 100
+}
+]
+requirements: [
+copper-wire/150
+simple-scheme/10
+titanium/60
+pneumatic-component/20
+]
+research: ground-unit-factory
+category: units
+

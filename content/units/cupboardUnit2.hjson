@@ -1,0 +1,55 @@
+name: Cupboard Unit Mk2
+immunities: [burning]
+type: legs
+description: Well, for some reason you decided this is powerful? No, its not. Fragile, but has an exciting armor
+hitSize: 20
+legCount: 6
+innacuracy: 20
+legLength: 32
+legMoveSpace: 1.5
+legSpeed: 1
+legContinuousMove: true
+drag: 5
+rotateMoveFirst: true
+flying: false
+accel: 5.001
+speed: 0.7
+health: 550
+armor: 15
+weapons: [
+{
+name: salvoU
+range: 180
+shootSound: shotgun
+reload: 5
+rotate: true
+rotateSpeed: 10
+x: 12
+y: -1
+recoil: 4
+alternate: true
+bullet: {
+type: missileBulletType
+innacuracy: 20
+despawnHit: false
+randomBulletSpread: 20
+trailColor: EF9F29
+frontColor: EF9F29
+homingPower: 0
+lifetime: 40
+height: 15
+width: 5
+speed: 3
+damage: 45
+fragBullets: 10
+fragBullet: {
+type: liquidBulletType
+liquid: Liquid-bronze
+speed: 1
+lifetime: 20
+range: 10
+width: 5
+}
+}
+}
+]

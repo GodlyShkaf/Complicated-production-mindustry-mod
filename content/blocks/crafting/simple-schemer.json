@@ -1,0 +1,31 @@
+{
+    "type": "GenericCrafter",
+    "name": "Chip maker",
+    "description": "Combines some stuff together to make simple scheme",
+    "outputItem": {"item": "simple-scheme", "amount":1},
+    "size": 2,
+    "health": 210,
+    "hasPower": true,
+    "hasItems": true,
+    "craftTime": 210,
+    "updateEffect": "blastsmoke",
+    "consumes":{
+        "power": 1.2,
+        "items": {
+            "items":[
+                {"item": "copper-wire", "amount": 3},
+                {"item": "bronze", "amount": 1},
+                {"item": "graphite", "amount": 2}
+                ]
+    }
+},
+"requirements": [
+    {"item": "copper-wire", "amount":15},
+    {"item": "lead", "amount": 65},
+    {"item": "graphite", "amount": 35}
+    ],
+    "category": "crafting",
+    "research": "wire-compressor",
+    "idleSound": "respawning",
+    "idleSoundVolume": 0.7
+    }

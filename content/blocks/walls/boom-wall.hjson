@@ -1,0 +1,12 @@
+health: 10
+name:Explosive wall
+description: Wall, that explodes upon destruction, dealing a lot of damage to enemy units
+type: Wall
+rebuildable: false
+category: defense
+buildTime: 60
+baseExplosiveness: 20
+requirements: [
+bronze/10
+blast-compound/10
+]

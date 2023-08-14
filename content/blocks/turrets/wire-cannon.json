@@ -1,0 +1,53 @@
+{
+    "name": "Wire power cannon",
+    "type": "itemTurret",
+    "description": "Cannon, absorbing the power of wires, releasing it in a powerful beam",
+    "health": 550,
+    "cooldown": 300,
+    "heatColor": "A90918",
+    "coolantMultiplier": 2,
+    "reload": 100,
+    "booster": true,
+    "optional": true,
+    "range": 150,
+    "burstSpacing": 300,
+    "size": 4,
+    "solid": true,
+    "effectOnHit": "smoke",
+    "shootSound": "laser",
+    "category": "turret",
+    "targetGround": true,
+    "targetAir": false,
+    "ammoTypes": {
+        "lead": {
+            "type":"lightningBulletType",
+            "damage": 70
+        },
+        "titanium": {
+            "type": "lightningBulletType",
+            "damage": 90,
+            "reloadMultiplier": 1.2
+        },
+        "metaglass": {
+            "killShooter": true,
+            "damage": 100
+        }
+    },
+    "shots": 10,
+    "innacuracy": 15,
+    "recoil": 1,
+    "restitution": 50,
+    "rotateSpeed": 45,
+    "shootCone": 20,
+    "update": true,
+    "layer": "turret",
+    "research": "arc",
+    "group": "turrets",
+    "outlineIcon": true,
+    "shootType": "lancerLazer",
+    "requirements": [
+        {"item": "copper-wire", "amount": 120},
+        {"item": "lead", "amount": 80},
+        {"item": "silicon", "amount": 25}
+        ]
+}

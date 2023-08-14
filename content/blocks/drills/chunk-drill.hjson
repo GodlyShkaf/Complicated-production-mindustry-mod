@@ -1,0 +1,14 @@
+size: 3
+type: drill
+category: production
+name: Chunk extraction centre
+description: Using the way of cutting away a chunk of dirt with the ore and filtering it drills very fast
+health: 700
+warmupSpeed: 0.02
+hasPower: true
+drillTime: 24
+itemCapacity: 100
+tier: 10
+rotateSpeed: 2.3
+liquidBoostIntensity: 2.5
+liquidCapacity: 100
