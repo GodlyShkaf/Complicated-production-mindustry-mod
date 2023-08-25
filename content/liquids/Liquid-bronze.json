@@ -1,0 +1,10 @@
+{
+    "name": "Liquid bronze",
+    "description": "Melted bronze, cool it to get usable ingots",
+    "temperature": 0.75,
+    "viscosity": 0.5,
+    "flammability": 0.1,
+    "color": "EF9F29",
+    "Explosiveness": 0,
+    "flameColor": "EF9F29"
+}

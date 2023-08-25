@@ -1,0 +1,44 @@
+{
+    "type": "GenericCrafter",
+    "name": "Bronse smelter",
+    "description": "Smelts bronze from copper, lead,  and coal",
+    "outputLiquid": {"liquid": "Liquid-bronze", "amount":0.2},
+    "size": 2,
+    "health": 160,
+    "liquidCapacity": 100,
+    "hasItems": true,
+    "hasLiquids": true,
+    "craftTime": 100,
+    "updateEffect": "smoke",
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {"type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {"type": "DrawLiquidRegion",
+            "suffix": "-liquid",
+            "drawLiquid": "Liquid-bronze"}
+            ]
+        
+    },
+    
+    "consumes":{
+        "items": {
+            "items":[
+                {"item":"copper", "amount":1},
+                {"item": "lead", "amount":2},
+                {"item": "coal", "amount":1}
+                ]
+}
+},
+"requirements": [
+    {"item": "copper-wire", "amount":15},
+    {"item": "lead", "amount": 50},
+    {"item": "graphite", "amount": 50}
+    ],
+    "category": "crafting",
+    "research": "silicon-smelter",
+    "idleSound": "respawning",
+    "idleSoundVolume": 0.7
+    }

@@ -1,0 +1,29 @@
+name: Cupboard reconstructor
+description: upgrades deployed cupboards to the next tier
+type: Reconstructor
+category: units
+constructTime: 180
+consumes: {
+power: 2
+liquids: [
+Liquid-bronze/0.015
+]
+items: [
+cupboard/30
+copper-wire/20
+simple-scheme/15
+]}
+size: 3
+health: 355
+upgrades: [
+[
+cupboardUnit, cupboardUnit2
+]
+]
+requirements: [
+cupboard/5
+wood/10
+simple-scheme/50
+silicon/10
+copper-wire/50
+]

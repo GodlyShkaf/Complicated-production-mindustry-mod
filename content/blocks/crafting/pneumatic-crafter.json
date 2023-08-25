@@ -1,0 +1,30 @@
+{
+    "type": "GenericCrafter",
+    "name": "Pneumatic combiner",
+    "description": "Combines bronze stuff and metaglass into set of pneumatic components",
+    "outputItem": {"item": "pneumatic-component", "amount":1},
+    "size": 2,
+    "health": 235,
+    "hasPower": true,
+    "hasItems": true,
+    "craftTime": 125,
+    "updateEffect": "mineBig",
+    "consumes":{
+        "power":0.8,
+        "items": {
+            "items":[
+                {"item": "bronze", "amount": 2},
+                {"item": "metaglass", "amount": 1}
+                ]
+    }
+},
+"requirements": [
+    {"item": "bronze", "amount": 10},
+    {"item": "lead", "amount": 70},
+    {"item": "simple-scheme", "amount": 5}
+    ],
+    "category": "crafting",
+    "research": "simple-schemer",
+    "idleSound": "respawning",
+    "idleSoundVolume": 0.7
+    }
