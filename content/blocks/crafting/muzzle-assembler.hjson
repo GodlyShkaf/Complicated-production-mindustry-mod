@@ -1,0 +1,48 @@
+type: GenericCrafter
+name: Muzzle Assembler
+description: Creates muzzles - advanced turret's and unit's part. Has high energy consumption but well fortified (Not sure why do you need that information)
+outputItem: muzzle/1
+size: 3
+hasLiquids: true
+health: 560
+liquidCapacity: 500
+hasPower: true
+hasItems: true
+craftTime: 250
+updateEffect: producesmoke
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawLiquidRegion
+drawLiquid: Liquid-bronze
+suffix: -liquid
+}
+{
+type: drawGlowRegion
+color: EF9F29
+suffix: -glow
+}
+]
+}
+consumes:{
+power: 10
+liquid: Liquid-bronze/0.05
+items: {
+items:[
+titanium-alloy/5
+plastanium/2
+pneumatic-component/2
+]
+}
+}
+requirements: [
+titanium/45
+wood/65
+scheme/10
+]
+category: crafting
+research: silicon-smelter

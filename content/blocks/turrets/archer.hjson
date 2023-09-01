@@ -1,0 +1,45 @@
+type: LiquidTurret
+category: turret
+requirements: [
+simple-scheme/4
+metaglass/16
+bronze/10
+lead/30
+]
+name: A.R.C.H.E.R.F.I.S.H    liquid turret
+description: ahoot pyles of water which does not deal a lot of damage, but Knockback enemies
+health: 675
+reload: 45
+shoot: {
+shots: 7
+shotDelay: 2
+}
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawLiquidRegion
+suffix: -liquid
+drawLiquid: water
+}
+{
+type: DrawTurret
+}
+]
+}
+size: 2
+range: 156
+inaccuracy: 25
+ammoTypes: {
+water: {
+damage: 5
+knockback: 4
+type: LiquidBulletType
+liquid: water
+speed: 1.5
+lifetime: 104
+frontColor: 999999
+status: unmoving
+statusDuration: 10
+}
+}

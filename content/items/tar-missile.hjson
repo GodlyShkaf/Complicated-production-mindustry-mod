@@ -1,0 +1,7 @@
+type: material
+name: Tar missile
+description: Innovatic military ammo, capable of covering enemy units in tar forever
+color: 36454F
+flammability: 1.6
+explosiveness: 0.8
+radioactivity: 0.3

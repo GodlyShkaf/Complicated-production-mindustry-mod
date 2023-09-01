@@ -1,0 +1,40 @@
+type: ConsumeGenerator
+category: power
+name: bronze generator
+description: generates power by collecting heat of melted bronze
+hasItems: false
+hasLiquids: true
+hasPower: true
+size: 1
+updateEffect: steam
+health: 100
+powerProduction: 2.15
+ambientSound: steam
+ambientSoundVolume: 0.1
+drawer: {
+type: drawMulti
+drawers: [
+{type: DrawRegion
+suffix: -bottom
+}
+{type: DrawLiquidTile
+drawLiquid: Liquid-bronze
+}
+{type: DrawDefault
+}
+]
+
+}
+requirements: [
+bronze/10
+lead/25
+]
+
+
+consumes: {
+liquids: [
+Liquid-bronze/0.1
+]
+}
+
+research: mechanical-drill

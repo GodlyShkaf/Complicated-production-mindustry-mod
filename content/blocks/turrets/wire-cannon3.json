@@ -1,0 +1,84 @@
+{
+    "name": "Wire power cannon Mk3",
+    "type": "itemTurret",
+    "description": "We made a turret, using a lot of lead, a loads of lead,  using all of your lead. You can forget about ever having exxecessive lead, but instead you'l get a nice lazershow",
+    "health": 3500,
+    "maxAmmo": 1500,
+    "cooldownTime": 350,
+    "heatColor": "A90918",
+    "reload": 60,
+    "range": 200,
+    "burstSpacing": 600,
+    "consumes": {
+        "power": 5
+    },
+    "size": 4,
+    "ammoPerShot": 75,
+    "solid": true,
+    "shootSound": "artillery",
+    "category": "turret",
+    "targetGround": true,
+    "targetAir": true,
+    "ammoTypes": {
+        "lead": {
+            "type": "basicBulletType",
+            "damage": 50,
+            "lifetime": 60,
+            "hitEffect": "bigShockwave",
+            "hitSound": "laser",
+            "buildingDamageMultiplier": 0.2,
+            "height": 32,
+            "width": 16,
+            "homingRange": 50,
+            "homingPower": 0.1,
+            "speed": 3,
+            "fragBullets": 20,
+            "fragBullet": {
+                "type": "laserBulletType",
+                "damage": 30,
+                "status": "wet"
+            }
+        },
+        "titanium": {
+            "type": "basicBulletType",
+            "damage": 65,
+            "reloadMultiplier": 1.2,
+            "lifetime": 60,
+            "ehitEffect": "bigShockwave",
+            "hitSound": "laser",
+            "buildingDamageMultiplier": 0.25,
+            "height": 32,
+            "homingRange": 50,
+            "homingPower": 0.1,
+            "width": 16,
+            "speed": 3,
+            "fragBullets": 21,
+            "fragBullet": {
+                "type": "laserBulletType",
+                "damage": 40,
+                "status": "wet"
+            }
+        },
+        "metaglass": {
+            "killShooter": true,
+            "damage": 600
+        }
+    },
+    "bulletSpread": 45,
+    "recoil": 6,
+    "restitution": 80,
+    "rotateSpeed": 1.5,
+    "research": "wire-cannon",
+    "shootCone": 20,
+    "update": true,
+    "layer": "turret",
+    "group": "turrets",
+    "outlineIcon": true,
+    "shootType": "lancerLazer",
+    "requirements": [
+        {"item": "copper-wire", "amount": 1000},
+        {"item": "scheme", "amount": 25},
+        {"item": "diamond", "amount": 25},
+        {"item": "titanium", "amount": 250}
+        ]
+}

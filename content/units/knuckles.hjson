@@ -1,0 +1,43 @@
+name: Knuckle
+description: Well, if Blade is a modification of flare, knuckle is a modification of horizon, Super tough, deadly and quite fast
+hitSize: 20
+drag: 0.01
+flying: true
+accel: 0.05
+engineOffset: 5
+speed: 2
+circleTarget: true
+health: 850
+armor: 10
+weapons: [
+{
+name: salvoA
+shootSound: shoot
+reload: 20
+x: 6
+y: -1
+recoil: 2
+alternate: false
+rotatable: true
+range: 60
+bullet: {
+type: missileBulletType
+lifetime: 40
+height: 6
+width: 4
+speed: 1.5
+damage: 3
+splashDamageRadius: 64
+splashDamage: 25
+fragBullets: 5
+fragBullet: {
+type: basicBulletType
+height: 3
+width: 2
+damage: 2
+lifetime: 12
+speed: 5
+}
+}
+}
+]

@@ -1,0 +1,43 @@
+{
+    "type": "GenericCrafter",
+    "name": "Ingot crafter",
+    "description": "Cools melted metals into ingots",
+    "outputItem": {"item": "bronze", "amount": 1},
+    "size": 2,
+    "health": 160,
+    "hasItems": true,
+    "hasLiquids": true,
+    "craftTime": 1500,
+    "drawer": {
+"type": "DrawMulti",
+"drawers": [
+{
+"type": "DrawDefault"
+},
+{
+"type": "DrawRegion",
+"suffix": "-alloy",
+"moveY": 10,
+"spinSprite": false,
+"rotateSpeed": 2,
+"mirror": true
+}
+]
+},
+    "updateEffect": "fuelburn",
+    "consumes":{
+    "liquids": [
+        {"liquid": "water", "amount": 0.01},
+    {"liquid": "Liquid-bronze", "amount": 0.024}
+    ]
+    },
+"requirements": [
+    {"item": "metaglass", "amount":10},
+    {"item": "lead", "amount": 70},
+    {"item": "graphite", "amount": 45}
+    ],
+    "category": "crafting",
+    "research": "bronze-smelter",
+    "idleSound": "deconstructing",
+    "idleSoundVolume": 0.7
+    }
