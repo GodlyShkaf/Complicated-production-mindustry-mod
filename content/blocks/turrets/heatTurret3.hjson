@@ -1,0 +1,53 @@
+type: LiquidTurret
+name: Heat 3
+description: meltdown, basically
+requirements: [
+processor/20
+diamond/10
+toughAlloy/300
+copper-wire/125
+platinum/100
+]
+drawer: {
+type: DrawTurret
+parts: [{
+type: RegionPart
+suffix: -blade
+mirror: true
+x: 7
+moveRot: -20
+moveX: 3
+progress: warmup
+under: true
+}]
+}
+shoot: {
+shootY: -15
+}
+shootWarmupSpeed: 0.03
+minWarmup: 0.5
+firingMoveFract: 0.5
+rotateSpeed: 0.75
+hasLiquids: true
+category: turret
+size: 4
+liquidCapacity: 21005
+outline: true
+health: 3125
+reload: 1
+shootSound: flame
+range: 295
+shootDuration: 500
+ammoTypes: {
+heat: {
+type: ContinuousFlameBulletType
+lifetime: 20
+damage: 12
+width: 10
+colors: [ffd280, EF9F29, ffd280, ffd280]
+length: 280
+status: melting
+statusDuration: 600
+ammoMultiplier: 0.02
+}
+}

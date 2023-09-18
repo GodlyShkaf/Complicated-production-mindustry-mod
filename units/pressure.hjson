@@ -1,0 +1,51 @@
+name: Pressure
+type: tank
+flying: false
+description: shoots homing bullets, deals little damage by drivin over buildings
+crushDamage: 0.4
+treadPullOffset: -2
+hitSize: 12
+omniMovement: false
+rotateMoveFirst: true
+faceTarget: false
+treadRects: [
+{
+x: 5
+y: -13
+width: 22
+height: 26
+}
+]
+health: 125
+armor: 3
+speed: 0.9
+ground: true
+groundLayer: 60
+weapons: [{
+name: tankGun
+reload: 30
+shoot: {
+shots: 2
+type: ShootAlternate
+barrels: 2
+spread: 2
+}
+ejectEffect: casing1
+inaccuracy: 20
+range: 110
+rotate: true
+bullet: {
+width: 7
+shootEffect: shootBig
+height: 12
+damage: 2
+splashDamage: 9
+splashDamageRadius: 24
+speed: 4.1
+lifetime: 60
+drag: 0.035
+homingPower: 0.3
+homingRange: 60
+homingDelay: 10
+}
+}]

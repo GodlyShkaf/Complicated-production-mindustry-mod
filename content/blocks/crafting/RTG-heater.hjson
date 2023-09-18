@@ -1,0 +1,30 @@
+type: GenericCrafter
+name: RTG heater
+description: uses heat of decaying stuff to produce heat...
+health: 285
+size: 3
+outputLiquid: heat/1
+craftTime: 2105
+consumes: {itemRadioactive: {}}
+requirements: [
+simple-scheme/10
+lead/120
+titanium-alloy/40
+]
+hasItems: true
+hasLiquids: true
+liquidCapacity: 1200
+category: crafting
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+color: A90918
+suffix: -glow
+}
+]
+}

@@ -1,0 +1,10 @@
+type: Conveyor
+health: 120
+name: Titanium alloy conveyor
+description: faster and tougher than titanium conveyor
+speed: 0.20
+displayedSpeed: 23
+requirements: [
+titanium-alloy/2
+wood/1
+]

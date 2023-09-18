@@ -1,0 +1,10 @@
+category: liquid
+type: LiquidRouter
+size: 4
+liquidCapacity: 132000
+requirements: [
+copper-wire/120
+metaglass/50
+bronze/70
+]
+health: 450

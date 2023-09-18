@@ -1,0 +1,9 @@
+{
+    "name": "Heat",
+    "description": "Heat energy, can be transported via pipes",
+    "temperature": 2,
+    "viscosity": 0,
+    "flammability": 0,
+    "color": "A90918",
+    "explosiveness": 0.1
+}

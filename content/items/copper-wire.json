@@ -1,0 +1,11 @@
+{
+    "type": "material",
+    "name": "copper wire",
+    "description": "some copper, Converted into wire",
+    "hardness": 1,
+    "charge": 0.1,
+    "cost": 1,
+    "color": 000000,
+    "Tier": 2
+    
+}

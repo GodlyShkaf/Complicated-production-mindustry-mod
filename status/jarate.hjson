@@ -1,0 +1,19 @@
+name: Jarate
+type: Status
+speedMultiplier: 0.8
+transitionDamage: 40
+healthMultiplier: 0.5
+affinities: [burning, melting]
+opposites: [wet]
+color: ffd280
+effect: {
+type: ParticleEffect
+sizeFrom: 6
+sizeTo: 1
+lifetime: 60
+particles: 10
+cone: 360
+length: 3
+colorFrom: ffd280
+colorTo: EF9F29
+}

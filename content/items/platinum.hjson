@@ -1,0 +1,9 @@
+type: material
+name: Platinum
+description: Rare metal, strong. Valuable thing for a capitalist society.
+color: b2bbc2
+flammability: 0
+explosiveness: 0
+radioactivity: 0
+hardness: 10
+cost: 15

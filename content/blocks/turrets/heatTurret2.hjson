@@ -1,0 +1,36 @@
+type: LiquidTurret
+name: Heat 2
+description: Shoots enemies with a powerfull beam of heat
+requirements: [
+processor/2
+diamond/1
+silicon/30
+titanium-alloy/55
+copper-wire/20
+]
+hasLiquids: true
+category: turret
+size: 3
+liquidCapacity: 12050
+outline: true
+health: 985
+reload: 60
+shootSound: shotgun
+range: 210
+inaccuracy: 20
+shoot: {
+shots: 5
+}
+ammoTypes: {
+heat: {
+type: ContinuousLaserBulletType
+lifetime: 30
+damage: 30
+width: 5
+length: 215
+status: burning
+statusDuration: 600
+ammoMultiplier: 0.001
+}
+}
+ammoPerShot: 1000

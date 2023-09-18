@@ -1,0 +1,44 @@
+type: LiquidTurret
+name: Heat 1
+description: Shoots enemys with beam of heat
+requirements: [
+bronze/20
+copper-wire/30
+copper/45
+]
+hasLiquids: true
+LiquidCapacity: 100
+category: turret
+size: 2
+liquidCapacity: 6500
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawLiquidRegion
+suffix: -liquid
+drawLiquid: heat
+}
+{
+type: DrawTurret
+}
+]
+}
+outline: true
+health: 430
+reload: 30
+shootSound: laser
+range: 210
+ammoTypes: {
+heat: {
+type: ContinuousLaserBulletType
+lifetime: 25
+damage: 12
+width: 2
+length: 215
+status: melting
+statusDuration: 210
+ammoMultiplier: 0.004
+}
+}
+ammoPerShot: 1000

@@ -1,0 +1,28 @@
+name: Variativ reconstructor
+description: upgrades units to second tier
+type: Reconstructor
+category: units
+constructTime: 360
+consumes: {
+power: 3
+items: [
+simple-scheme/10
+silicon/20
+wood/30
+]}
+size: 3
+health: 535
+upgrades: [
+[
+blade, swipe
+]
+[
+pressure, barometer
+]
+]
+requirements: [
+titanium-alloy/10
+titanium/20
+graphite/30
+diamond/2
+]

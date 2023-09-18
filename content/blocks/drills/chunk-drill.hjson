@@ -1,0 +1,35 @@
+size: 3
+type: Drill
+category: production
+name: Chunk extraction centre
+description: "Using the way of cutting away a chunk of dirt with the ore and filtering it drills very fast,
+
+Attention!
+
+speeds up really slowly, so you are better keep that thing going"
+health: 700
+requirements: [
+titanium-alloy/120
+diamond/20
+scheme/30
+copper-wire/10
+]
+drawRim: false
+drawTop: false
+warmupSpeed: 0.0001
+hasPower: true
+drillTime: 32
+itemCapacity: 50
+tier: 10
+liquidBoostIntensity: 1.7
+liquidCapacity: 1000
+consumes: {
+power: 20
+coolant: {
+optional: true
+amount: 1
+}
+liquids: [
+heat/10
+]
+}

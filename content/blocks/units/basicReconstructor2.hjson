@@ -1,0 +1,30 @@
+name: Pressurized reconstructor
+description: upgrades units to third tier
+type: Reconstructor
+category: units
+constructTime: 985
+consumes: {
+power: 3.5
+items: [
+scheme/55
+copper-wire/200
+titanium-alloy/350
+pneumatic-component/100
+]}
+size: 5
+health: 1235
+upgrades: [
+[
+swipe, abrasion
+]
+[
+barometer, smog
+]
+]
+requirements: [
+titanium-alloy/100
+scheme/75
+processor/1
+diamond/6
+toughAlloy/20
+]

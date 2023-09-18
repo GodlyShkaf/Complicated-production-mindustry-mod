@@ -1,0 +1,34 @@
+name: Cupboard reconstructor mk2
+description: "Upgrades cupboards mk2 to 3rd tier
+Can upgrade blade to smolder for some reason. Even tho im not sure why anyone needs to make t3 with the recipe of t4"
+type: Reconstructor
+category: units
+constructTime: 1965
+consumes: {
+power: 20
+liquids: [
+heat/25
+]
+items: [
+cupboard/300
+thorium/200
+rocket-fuel/5
+scheme/15
+]}
+size: 7
+health: 355
+upgrades: [
+[
+cupboardUnit2, cupboardUnit3
+]
+[
+blade, napalm
+]
+]
+requirements: [
+cupboard/50
+wood/10
+scheme/20
+silicon/100
+pneumatic-component/75
+]

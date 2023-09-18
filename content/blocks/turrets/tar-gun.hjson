@@ -1,0 +1,63 @@
+type: ItemTurret
+name: Tar covering tactical artillery
+description: launches tar missiles, which cover enemy units in slowing tar forever
+category: turret
+coolantMultiplier: 2.1
+consumes: {
+	coolant: {
+		amount: 0.4
+		optional: true
+	}
+	liquids: [
+oil/0.2
+	]
+}
+hasLiquids: true
+liquidCapacity: 100
+health: 870
+size: 4
+range: 1200
+rotateSpeed: 2
+requirements: [
+processor/2
+scheme/6
+titanium-alloy/45
+diamond/2
+bronze/850
+]
+predictTarget: false
+reload: 600
+recoil: 4
+recoilTime: 55
+shootSound: shotgun
+shootEffect: {
+type: explosionEffect
+waveLife: 15
+waveRad: 15
+waveColor: 343434
+sparks: 15
+sparkLen: 5
+sparkStroke: 1
+sparkColor: EF9F29
+sparkRad: 40
+smokes: 10
+smokeRad: 90
+}
+drawer: {
+type: DrawTurret
+parts: [{
+type: RegionPart
+suffix: -blade
+mirror: true
+x: 10
+moveRot: 45
+progress: recoil
+under: true
+}]
+}
+ammoTypes: {
+tar-missile: {
+spawnUnit: missile
+ammoMultiplier: 1
+}
+}

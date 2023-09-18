@@ -1,0 +1,30 @@
+name: Matter reconstructor
+description: Upgrades units to fourth tier
+type: Reconstructor
+category: units
+constructTime: 3335
+consumes: {
+liquids: [
+oil/1
+]
+power: 7.5
+items: [
+rocket-fuel/55
+diamond/10
+processor/4
+toughAlloy/200
+thorium/1000
+]}
+size: 9
+health: 1235
+upgrades: [
+[
+abrasion, bleeding
+]
+]
+requirements: [
+titanium-alloy/450
+toughAlloy/355
+diamond/30
+processor/10
+]

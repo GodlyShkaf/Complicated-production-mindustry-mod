@@ -1,0 +1,10 @@
+{
+    "type": "material",
+    "name": "Processor",
+    "description": "An actual processor,capable of difficult calculations, still not powerful enough to launch KSP2",
+    "hardness": 1,
+    "cost": 5,
+    "color": "619B0A",
+    "Tier": 4
+    
+}

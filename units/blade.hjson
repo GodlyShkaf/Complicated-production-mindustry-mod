@@ -1,0 +1,39 @@
+name: Blade
+description: Flare-like unit, very fast and deadly, but fragile
+hitSize: 8
+drag: 0.1
+flying: true
+accel: 0.3
+engineOffset: 5
+speed: 3
+health: 55
+circleTarget: true
+armor: 10
+weapons: [
+{
+name: salvoM
+shoot: {shots: 3}
+shootSound: shoot
+height: 32
+reload: 5
+recoil: 5
+alternate: true
+rotatable: true
+range: 100
+bullet: {
+type: basicBulletType
+lifetime: 25
+height: 4
+width: 2
+speed: 4
+damage: 3
+fragBullets: 5
+fragBullet: {
+type: basicBulletType
+damage: 4
+lifetime: 3
+speed: 5
+}
+}
+}
+]

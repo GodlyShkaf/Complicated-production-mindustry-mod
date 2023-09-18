@@ -1,0 +1,31 @@
+type: GenericCrafter
+name: Combustion heater
+description: uses fuel to produce heat
+health: 240
+size: 2
+outputLiquid: heat/10
+craftTime: 60
+itemDuration: 120
+consumes: {itemFlammable: {}}
+requirements: [
+lead/10
+bronze/10
+titanium/40
+]
+hasItems: true
+hasLiquids: true
+category: crafting
+liquidCapacity: 600
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+color: EF9F29
+suffix: -glow
+}
+]
+}
