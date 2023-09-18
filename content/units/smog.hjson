@@ -1,0 +1,64 @@
+name: Smog
+type: tank
+flying: false
+description: Shoots a lot of homing bullets, crushes buildings by drivin over or ramming them
+crushDamage: 0.3
+hitSize: 36
+omniMovement: false
+rotateMoveFirst: true
+faceTarget: false
+rotateSpeed: 0.5
+drownTimeMultiplier: 5
+treadRects: [
+{
+x: 48
+y: 22
+width: 20
+height: 36
+}
+]
+abilities: [{
+type: ShieldArcAbility
+radius: 40
+max: 300
+regen: 0.2
+cooldown: 245
+angle: 180
+whenShooting: true
+width: 10
+}]
+health: 1215
+armor: 4
+speed: 0.25
+ground: true
+groundLayer: 69
+weapons: [{
+name: tankGun3
+mirror: false
+x: 0
+y: -5
+reload: 6
+shoot: {
+shots: 3
+spread: 7
+barrels: 3
+type: ShootAlternate
+shotDelay: 2
+}
+ejectEffect: casing2
+inaccuracy: 5
+range: 185
+rotate: true
+bullet: {
+width: 3
+shootEffect: shootSmall
+height: 7
+damage: 15
+speed: 4
+lifetime: 120
+drag: 0.010
+homingPower: 0.03
+homingRange: 64
+homingDelay: 10
+}
+}]

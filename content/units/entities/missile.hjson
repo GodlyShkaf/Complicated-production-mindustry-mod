@@ -1,0 +1,86 @@
+type: missile
+template: MissileUnitType
+name: missile
+collidesAir: true
+collidesGround: true
+damage: 50
+speed: 2
+maxRange: 6
+lifetime: 1359.9999999
+targetsAir: true
+range: 60
+rotateSpeed: 2
+trailLength: 75
+trailWidth: 4
+missileAccelTime: 60
+lowAltitude: true
+loopSound: missileTrail
+loopSoundVolume: 0.6
+targetable: true
+killable: true
+health: 585
+armor: 5
+engineSize: 5
+engineColor: EF9F29
+engineOffset: 8
+trailScale: 0.3
+trailColor: ffd280
+shootOnDeath: true
+weapons:[
+{reload: 30
+range: 60
+rotatable: true
+rotateSpeed: 50
+killShooter: true
+shootOnDeath: true
+shootCone: 180
+splashDamage: 65
+splashDamageRadius: 64
+bullet: {
+killShooter: true
+collidesAir: true
+collidesGround: true
+hitEffect:{
+type: WaveEffect
+wavelife: 555
+sizeFrom: 0
+sizeTo: 200
+strokeFrom: 3
+strokeTo: 1
+colorFrom: A90918
+colorTo: 343434
+}
+damage: 60
+speed: 1
+health: 250
+hitSize: 24
+width: 1
+height: 1
+accel: 0.01
+deccel: 0.01
+status: tarred2
+statusDuration: 108000
+drag: -0.02
+type: MissileBulletType
+lifetime: 1
+randomFragSpread: 45
+fragBullets: 8
+fragVelocityMin: 0.1
+fragVelocityMax: 0.6
+fragBullet: {
+type: artilleryBulletType
+status: tarred2
+statusDuration: 108000
+speed: 1
+lifetime: 120
+splashDamage: 45
+splashDamageRadius: 24
+frontColor: A90918
+randomFragSpread: 45
+collidesAir: true
+collidesGround: true
+fragVelocityMax: 0.5
+}
+}
+}
+]

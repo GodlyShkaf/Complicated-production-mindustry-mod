@@ -1,0 +1,59 @@
+name: Weather
+type: tank
+flying: false
+description: Shoots a lot of homing bullets, crushes building by drivin over or ramming it
+crushDamage: 0.3
+treadPullOffset: 6
+hitSize: 36
+omniMovement: false
+rotateMoveFirst: true
+faceTarget: false
+rotateSpeed: 0.5
+drownTimeMultiplier: 5
+treadRects: [
+{
+x: 15
+y: 6
+width: 20
+height: 40
+}
+]
+abilities: [{
+type: ShieldArcAbility
+radius: 40
+max: 300
+regen: 0.2
+cooldown: 245
+angle: 180
+whenShooting: true
+width: 10
+}]
+health: 1215
+armor: 4
+speed: 0.25
+ground: true
+groundLayer: 69
+weapons: [{
+name: tankGun3
+mirror: false
+x: 0
+y: -5
+reload: 6
+shoot: {
+shots: 3
+spread: 7
+barrels: 3
+type: ShootAlternate
+shotDelay: 2
+}
+ejectEffect: casing2
+inaccuracy: 5
+range: 185
+rotate: true
+bullet: {
+width: 11
+shootEffect: shootBig
+lifetime: 1
+spawnUnit: missile2
+}
+}]

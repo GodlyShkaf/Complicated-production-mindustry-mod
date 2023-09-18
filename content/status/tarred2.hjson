@@ -1,0 +1,19 @@
+name: Permanent-slow-down
+type: Status
+damage: 0.15
+speedMultiplier: 0.6
+transitionDamage: 40
+affinities: [burning, melting, tarred]
+opposites: [wet, freezing]
+color: 000000
+effect: {
+type: ParticleEffect
+sizeFrom: 7
+sizeTo: 0
+lifetime: 25
+particles: 3
+cone: 360
+length: 2
+colorFrom: 1c1c24
+colorTo: 343434
+}

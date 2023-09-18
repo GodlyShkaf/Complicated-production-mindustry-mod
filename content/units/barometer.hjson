@@ -1,0 +1,51 @@
+name: Barometer
+type: tank
+flying: false
+description: Shoots homing bullets in cool pattern, damages building by driving over or ramming it 
+crushDamage: 0.5
+treadFrames: 30
+treadPullOffset: 7
+hitSize: 24
+omniMovement: false
+rotateMoveFirst: true
+faceTarget: false
+rotateSpeed: 1.9
+treadRects: [
+{
+x: 8
+y: -45
+width: 27
+height: 90
+}
+]
+health: 345
+armor: 3
+speed: 0.5
+ground: true
+groundLayer: 65
+weapons: [{
+name: tankGun2
+x: 7
+reload: 45
+shoot: {
+shots: 9
+spread: 6.5
+type: ShootSpread
+shotDelay: 5
+}
+ejectEffect: casing2
+range: 210
+rotate: true
+bullet: {
+width: 9
+shootEffect: shootBig
+height: 15
+damage: 30
+speed: 5
+lifetime: 120
+drag: 0.020
+homingPower: 0.2
+homingRange: 64
+homingDelay: 10
+}
+}]
